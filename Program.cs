@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 
 class Program
 {
     static void Main()
     {
-       
+        Console.WriteLine("Введите номер функции (от 1 до 20):");
         int functionNumber = int.Parse(Console.ReadLine());
 
-        double x = 10;
+        Console.WriteLine("Введите значение x:");
+        double x = double.Parse(Console.ReadLine());
 
         double result = CalculateFunction(functionNumber, x);
 
-        Console.WriteLine( result);
-        Console.ReadKey();
+        Console.WriteLine("Результат: " + result);
     }
 
     static double CalculateFunction(int functionNumber, double x)
